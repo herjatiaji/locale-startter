@@ -19,4 +19,6 @@
 
     <!-- Do not translate.  -->
     <string name="dial_log_message">Can\'t resolve app for ACTION_DIAL Intent.</string>
+    <string name="action_language">language</string>
+    <string name="expired_label">expired date</string>
 </resources>
