@@ -6,6 +6,9 @@
     <string name="nougat">Permen Nougatt</string>
     <string name="help_text">Jika butuh bantuan, silahkan menghubungi Departemen Bantuan</string>
     <string name="dial_log_message">Tidak dapat Menyelesaikan panggilan</string>
-    <string name="action_language">لغة</string>
+    <string name="action_language">Bahasa</string>
     <string name="expired_label">tanggal kadaluarsa</string>
+    <string name="price_label">"Harga per barang (Rp): "</string>
+    <string name="total_price_label">"Harga per 100 barang: "</string>
+    <string name="set_price_button">Tetapkan harga</string>
 </resources>

@@ -6,5 +6,9 @@
     <string name="nougat">نوجا كاندي</string>
     <string name="help_text">إذا كنت بحاجة إلى مساعدة ، يرجى الاتصال بقسم المساعدة</string>
     <string name="dial_log_message">Tidak dapat Menyelesaikan panggilan</string>
-    <string name="action_language">Bahasa</string>
+    <string name="action_language">لغة</string>
+    <string name="expired_label">نوجا كاندي</string>
+    <string name="price_label">السعر للسلعة :</string>
+    <string name="total_price_label">السعر لكل 100 عنصر:</string>
+    <string name="set_price_button">ضع سعر</string>
 </resources>

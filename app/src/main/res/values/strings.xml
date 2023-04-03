@@ -21,4 +21,7 @@
     <string name="dial_log_message">Can\'t resolve app for ACTION_DIAL Intent.</string>
     <string name="action_language">language</string>
     <string name="expired_label">expired date</string>
+    <string name="price_label">"Price per item ($): "</string>
+    <string name="total_price_label">Price per 100 item:</string>
+    <string name="set_price_button">Set Price</string>
 </resources>

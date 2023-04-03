@@ -9,18 +9,29 @@ import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.util.Currency;
 import java.util.Date;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
+    EditText price;
+    TextView totalResult;
+    Button setPriceBtn;
+    float total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -40,6 +51,25 @@ public class MainActivity extends AppCompatActivity {
         String formatDate = DateFormat.getDateInstance().format(myDate);
         TextView expiredTextView = findViewById(R.id.date);
         expiredTextView.setText(formatDate);
+
+        price = findViewById(R.id.price);
+        totalResult = findViewById(R.id.total_price);
+        setPriceBtn = findViewById(R.id.price_button);
+
+        setPriceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String amount = price.getText().toString();
+                total = (float) Integer.parseInt(amount);
+
+                float result = total * 100;
+
+                NumberFormat format = NumberFormat.getCurrencyInstance();
+                format.setMaximumFractionDigits(0);
+                format.setCurrency(Currency.getInstance(Locale.getDefault()));
+                totalResult.setText(format.format(result));
+            }
+        });
     }
 
     /**
